@@ -3,7 +3,3 @@
 //
 
 #include "Card.h"
-
-Card::Rank getValue() {
-    return Card::r;
-}

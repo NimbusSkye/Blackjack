@@ -5,10 +5,12 @@
 #ifndef BLACKJACK_CARD_H
 #define BLACKJACK_CARD_H
 
+#include <iostream>
+
 
 class Card {
-    protected:
-    enum Rank {ACE = 1, 
+    public:
+    enum Rank {ACE=1, 
     TWO, 
     THREE, 
     FOUR, 
@@ -21,12 +23,15 @@ class Card {
     JACK, 
     QUEEN, 
     KING};
-    enum Type {CLUBS, DIAMONDS, HEARTS, SPADES};
+    enum Type {CLUBS='C', DIAMONDS='D', HEARTS='H', SPADES='S'};
     Rank r;
     Type t;
-    public:
-    void displayCard();
-    int getValue();
+    void displayCard() {
+        std::cout << r << (char) t << std::endl;
+    };
+    int getValue() {
+        return r;
+    };
     Card (Card::Rank rank, Card::Type type) {
         r=rank;
         t=type;
