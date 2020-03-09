@@ -10,7 +10,7 @@
 
 class Card {
     public:
-    enum Rank {ACE=1, 
+    enum Rank {ACE='1', 
     TWO, 
     THREE, 
     FOUR, 
@@ -20,17 +20,17 @@ class Card {
     EIGHT, 
     NINE, 
     TEN, 
-    JACK, 
-    QUEEN, 
-    KING};
+    JACK='J', 
+    QUEEN='Q', 
+    KING='K'};
     enum Type {CLUBS='C', DIAMONDS='D', HEARTS='H', SPADES='S'};
     Rank r;
     Type t;
     void displayCard() {
-        std::cout << r << (char) t << std::endl;
+        std::cout << (char) r << (char) t << std::endl;
     };
-    int getValue() {
-        return r;
+    char getValue() {
+        return (char) r;
     };
     Card (Card::Rank rank, Card::Type type) {
         r=rank;

@@ -4,5 +4,6 @@
 CMakeFiles/Blackjack.dir/Card.cpp.o: ../Card.cpp
 CMakeFiles/Blackjack.dir/Card.cpp.o: ../Card.h
 
+CMakeFiles/Blackjack.dir/main.cpp.o: ../Card.h
 CMakeFiles/Blackjack.dir/main.cpp.o: ../main.cpp
 

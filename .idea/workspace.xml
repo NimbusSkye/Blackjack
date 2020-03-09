@@ -13,10 +13,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ca16b5e0-1045-4bfb-b68c-72bd77090cba" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Card.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Card.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Card.h" beforeDir="false" afterPath="$PROJECT_DIR$/Card.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Blackjack.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Blackjack.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,6 +73,7 @@
       <workItem from="1583776386127" duration="29000" />
       <workItem from="1583777380916" duration="114000" />
       <workItem from="1583779427646" duration="499000" />
+      <workItem from="1583780454243" duration="66000" />
     </task>
     <servers />
   </component>
@@ -87,7 +85,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

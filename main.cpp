@@ -4,7 +4,7 @@
 using namespace std;
 
 int main () {
-    Card *c = new Card (Card::KING, Card::CLUBS);
+    Card *c = new Card (Card::THREE, Card::SPADES);
     c->displayCard();
     cout << c->getValue() << endl;
 }
