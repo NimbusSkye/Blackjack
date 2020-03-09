@@ -7,7 +7,7 @@
 
 
 class Card {
-    private:
+    protected:
     enum Rank {ACE = 1, 
     TWO, 
     THREE, 
