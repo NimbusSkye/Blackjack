@@ -8,8 +8,9 @@
 #include "Hand.h"
 
 class Deck : Hand {
-
-
+    void shuffle ();
+    void Populate();
+    Card deal();
 };
 
 

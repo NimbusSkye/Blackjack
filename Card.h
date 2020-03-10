@@ -10,6 +10,10 @@ using namespace std;
 
 class Card {
 public:
+    void displayCard();
+    int getValue();
+    Card (int rank, char type);
+private:
     enum Rank {ACE=1,
         TWO,
         THREE,
@@ -24,10 +28,6 @@ public:
         QUEEN,
         KING};
     enum Type {CLUBS='C', DIAMONDS='D', HEARTS='H', SPADES='S'};
-    void displayCard();
-    int getValue();
-    Card (Card::Rank rank, Card::Type type);
-private:
     Rank r;
     Type t;
 };

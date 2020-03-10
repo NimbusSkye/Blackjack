@@ -25,7 +25,7 @@ int Card::getValue() {
     return r;
 }
 
-Card::Card (Card::Rank rank, Card::Type type) {
-r=rank;
-t=type;
+Card::Card (int rank, char type) {
+r=static_cast<Rank>(rank);
+t=static_cast<Type>(type);
 }

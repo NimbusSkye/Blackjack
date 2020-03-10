@@ -10,7 +10,7 @@
 using namespace std;
 
 class Hand {
-private:
+protected:
     vector<Card> *cards = new vector<Card>;
 public:
     void add (Card c);

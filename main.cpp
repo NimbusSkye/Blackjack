@@ -5,8 +5,8 @@
 using namespace std;
 
 int main () {
-    Card *c = new Card (Card::KING, Card::SPADES);
-    Card *c1 = new Card (Card::TEN, Card::CLUBS);
+    Card *c = new Card (11, 'S');
+    Card *c1 = new Card (10, 'C');
     Hand *h = new Hand();
     h->add(*c);
     h->add(*c1);
