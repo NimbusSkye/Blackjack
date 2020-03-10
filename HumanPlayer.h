@@ -11,6 +11,7 @@
 using namespace std;
 
 class HumanPlayer : public AbstractPlayer {
+public:
     bool isDrawing () override;
     void announce (Hand h);
 };

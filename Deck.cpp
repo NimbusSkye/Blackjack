@@ -17,12 +17,6 @@ void Deck::Populate () {
     }
 }
 
-void Deck::view() {
-    for (Card c : *cards) {
-        c.displayCard();
-    }
-}
-
 Card Deck::deal () {
     Card c = cards->front();
     cards->erase(cards->begin());

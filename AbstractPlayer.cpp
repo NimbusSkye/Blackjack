@@ -1,5 +1,5 @@
 #include "AbstractPlayer.h"
 
 bool AbstractPlayer::isBusted() {
-    return Hand::getTotal()>=21;
+    return Hand::getTotal()>21;
 }

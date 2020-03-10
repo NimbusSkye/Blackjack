@@ -14,7 +14,7 @@ void Card::displayCard() {
         default:
             cout << r;
     }
-    cout << (char) t << endl;
+    cout << (char) t << " ";
 }
 
 int Card::getValue() {

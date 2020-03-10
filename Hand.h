@@ -12,6 +12,7 @@ public:
     void add (Card c);
     void clear ();
     int getTotal();
+    void view();
 };
 
 

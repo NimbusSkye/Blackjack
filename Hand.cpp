@@ -13,3 +13,9 @@ int Hand::getTotal() {
     }
     return total;
 }
+
+void Hand::view() {
+    for (Card c : *cards) {
+        c.displayCard();
+    }
+}

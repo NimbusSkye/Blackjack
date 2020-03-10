@@ -7,12 +7,13 @@
 
 #include "Deck.h"
 #include "ComputerPlayer.h"
-
+#include "HumanPlayer.h"
 
 class BlackJackGame {
 private:
     Deck *m_deck = new Deck();
     ComputerPlayer *m_casino = new ComputerPlayer();
+    HumanPlayer *m_player = new HumanPlayer();
 public:
     void play();
 };

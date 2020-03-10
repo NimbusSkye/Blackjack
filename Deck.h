@@ -3,12 +3,11 @@
 
 #include "Hand.h"
 
-class Deck : private Hand {
+class Deck : public Hand {
 public:
     void shuffle ();
     void Populate();
     Card deal();
-    void view();
 };
 
 

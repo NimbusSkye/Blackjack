@@ -8,6 +8,7 @@
 #include "AbstractPlayer.h"
 
 class ComputerPlayer : public AbstractPlayer {
+public:
     bool isDrawing () override;
 };
 
