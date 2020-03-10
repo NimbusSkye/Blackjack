@@ -6,11 +6,11 @@
 #define BLACKJACK_CARD_H
 
 #include <iostream>
-
+using namespace std;
 
 class Card {
     public:
-    enum Rank {ACE='1', 
+    enum Rank {ACE=1,
     TWO, 
     THREE, 
     FOUR, 
@@ -20,17 +20,30 @@ class Card {
     EIGHT, 
     NINE, 
     TEN, 
-    JACK='J', 
-    QUEEN='Q', 
-    KING='K'};
+    JACK,
+    QUEEN,
+    KING};
     enum Type {CLUBS='C', DIAMONDS='D', HEARTS='H', SPADES='S'};
     Rank r;
     Type t;
     void displayCard() {
-        std::cout << (char) r << (char) t << std::endl;
+        switch(r) {
+            case JACK:
+                cout << 'J';
+                break;
+            case QUEEN:
+                cout << 'Q';
+                break;
+            case KING:
+                cout << 'K';
+                break;
+            default:
+                cout << r;
+        }
+        cout << (char) t << endl;
     };
-    char getValue() {
-        return (char) r;
+    int getValue() {
+        return r;
     };
     Card (Card::Rank rank, Card::Type type) {
         r=rank;

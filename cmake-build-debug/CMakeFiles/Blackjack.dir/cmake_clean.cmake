@@ -1,8 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Blackjack.dir/main.cpp.o"
-  "CMakeFiles/Blackjack.dir/Card.cpp.o"
+  "Blackjack.exe"
   "Blackjack.pdb"
-  "Blackjack"
+  "CMakeFiles/Blackjack.dir/Card.cpp.o"
+  "CMakeFiles/Blackjack.dir/Hand.cpp.o"
+  "CMakeFiles/Blackjack.dir/main.cpp.o"
+  "libBlackjack.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

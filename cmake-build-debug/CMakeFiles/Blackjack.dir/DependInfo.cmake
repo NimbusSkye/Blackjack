@@ -4,8 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/2019/ywang498/CLionProjects/Blackjack/Card.cpp" "/home/2019/ywang498/CLionProjects/Blackjack/cmake-build-debug/CMakeFiles/Blackjack.dir/Card.cpp.o"
-  "/home/2019/ywang498/CLionProjects/Blackjack/main.cpp" "/home/2019/ywang498/CLionProjects/Blackjack/cmake-build-debug/CMakeFiles/Blackjack.dir/main.cpp.o"
+  "/cygdrive/c/Users/Admin/CLionProjects/Blackjack/Card.cpp" "/cygdrive/c/Users/Admin/CLionProjects/Blackjack/cmake-build-debug/CMakeFiles/Blackjack.dir/Card.cpp.o"
+  "/cygdrive/c/Users/Admin/CLionProjects/Blackjack/Hand.cpp" "/cygdrive/c/Users/Admin/CLionProjects/Blackjack/cmake-build-debug/CMakeFiles/Blackjack.dir/Hand.cpp.o"
+  "/cygdrive/c/Users/Admin/CLionProjects/Blackjack/main.cpp" "/cygdrive/c/Users/Admin/CLionProjects/Blackjack/cmake-build-debug/CMakeFiles/Blackjack.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
