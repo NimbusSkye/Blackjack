@@ -13,6 +13,7 @@ public:
     void displayCard();
     int getValue();
     Card (int rank, char type);
+    Card (int rank, int type);
 private:
     enum Rank {ACE=1,
         TWO,

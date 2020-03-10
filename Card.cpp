@@ -29,3 +29,20 @@ Card::Card (int rank, char type) {
 r=static_cast<Rank>(rank);
 t=static_cast<Type>(type);
 }
+
+Card::Card (int rank, int type) {
+    r = static_cast<Rank>(rank);
+    switch (type) {
+        case 1:
+            t = Card::CLUBS;
+            break;
+        case 2:
+            t = Card::DIAMONDS;
+            break;
+        case 3:
+            t = Card::HEARTS;
+            break;
+        default:
+            t = Card::SPADES;
+    }
+}
