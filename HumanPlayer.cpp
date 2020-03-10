@@ -16,8 +16,8 @@ bool HumanPlayer::isDrawing () {
 void HumanPlayer::announce(Hand h) {
     if (HumanPlayer::isBusted() || h.getTotal()==21)
         cout << "Player lost.";
-    else if (h.getTotal()==HumanPlayer::getTotal())
-        cout << "Push.";
-    else
+    else if (h.getTotal()>21 || h.getTotal()>HumanPlayer::getTotal())
         cout << "Player won.";
+    else
+        cout << "Push.";
 }
