@@ -9,46 +9,27 @@
 using namespace std;
 
 class Card {
-    public:
+public:
     enum Rank {ACE=1,
-    TWO, 
-    THREE, 
-    FOUR, 
-    FIVE, 
-    SIX, 
-    SEVEN,
-    EIGHT, 
-    NINE, 
-    TEN, 
-    JACK,
-    QUEEN,
-    KING};
+        TWO,
+        THREE,
+        FOUR,
+        FIVE,
+        SIX,
+        SEVEN,
+        EIGHT,
+        NINE,
+        TEN,
+        JACK,
+        QUEEN,
+        KING};
     enum Type {CLUBS='C', DIAMONDS='D', HEARTS='H', SPADES='S'};
+    void displayCard();
+    int getValue();
+    Card (Card::Rank rank, Card::Type type);
+private:
     Rank r;
     Type t;
-    void displayCard() {
-        switch(r) {
-            case JACK:
-                cout << 'J';
-                break;
-            case QUEEN:
-                cout << 'Q';
-                break;
-            case KING:
-                cout << 'K';
-                break;
-            default:
-                cout << r;
-        }
-        cout << (char) t << endl;
-    };
-    int getValue() {
-        return r;
-    };
-    Card (Card::Rank rank, Card::Type type) {
-        r=rank;
-        t=type;
-    }
 };
 
 

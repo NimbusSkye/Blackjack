@@ -10,7 +10,9 @@ int main () {
     Hand *h = new Hand();
     h->add(*c);
     h->add(*c1);
-    //c->displayCard();
-    //cout << c->getValue() << endl;
+    c->displayCard();
+    c1->displayCard();
+    cout << c->getValue() << endl;
+    cout << c1->getValue() << endl;
     cout << h->getTotal();
 }
