@@ -1,7 +1,3 @@
-//
-// Created by Admin on 3/10/2020.
-//
-
 #include "Deck.h"
 #include <random>
 #include <algorithm>
@@ -21,6 +17,14 @@ void Deck::Populate () {
     }
 }
 
-Card deal () {
+void Deck::view() {
+    for (Card c : *cards) {
+        c.displayCard();
+    }
+}
 
+Card Deck::deal () {
+    Card c = cards->front();
+    cards->erase(cards->begin());
+    return c;
 }

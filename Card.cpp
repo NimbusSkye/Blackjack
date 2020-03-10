@@ -1,7 +1,3 @@
-//
-// Created by ywang498 on 2020-03-09.
-//
-
 #include "Card.h"
 
 void Card::displayCard() {
@@ -22,6 +18,8 @@ void Card::displayCard() {
 }
 
 int Card::getValue() {
+    if (r>10)
+        return 10;
     return r;
 }
 

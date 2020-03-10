@@ -1,7 +1,3 @@
-//
-// Created by Admin on 3/9/2020.
-//
-
 #ifndef BLACKJACK_HAND_H
 #define BLACKJACK_HAND_H
 

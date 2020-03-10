@@ -1,22 +1,24 @@
 #include <iostream>
-#include "Card.h"
-#include "Hand.h"
 #include "Deck.h"
 
 using namespace std;
 
-int main () {
-    Deck *d = new Deck();
-    d->Populate();
-    cout << d->getTotal();
-//    Card *c = new Card (11, 'S');
-//    Card *c1 = new Card (10, 'C');
-//    Hand *h = new Hand();
-//    h->add(*c);
-//    h->add(*c1);
-//    c->displayCard();
-//    c1->displayCard();
-//    cout << c->getValue() << endl;
-//    cout << c1->getValue() << endl;
-//    cout << h->getTotal();
+int main ()
+{
+    cout << "\tWelcome to the Comp322 Blackjack game!" << endl << endl ;
+    BlackJackGame game;
+// The main loop of the game
+    bool playAgain = true ;
+    char answer = 'y' ;
+    while (playAgain)
+    {
+        game.play();
+// Check whether the player would like to play another round
+        cout << "Would you like another round? (y/n): " ;
+        cin >> answer;
+        cout << endl << endl ;
+        playAgain = (answer == 'y' ? true : false );
+    }
+    cout << "Gave over!" ;
+    return 0 ;
 }

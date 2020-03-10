@@ -1,7 +1,3 @@
-//
-// Created by ywang498 on 2020-03-09.
-//
-
 #ifndef BLACKJACK_CARD_H
 #define BLACKJACK_CARD_H
 
