@@ -41,3 +41,9 @@ void BlackJackGame::play() {
     m_player->announce(*m_casino);
     cout << endl;
 }
+
+BlackJackGame::~BlackJackGame() {
+    delete m_deck;
+    delete m_player;
+    delete m_casino;
+}

@@ -16,6 +16,7 @@ private:
     HumanPlayer *m_player = new HumanPlayer();
 public:
     void play();
+    ~BlackJackGame();
 };
 
 

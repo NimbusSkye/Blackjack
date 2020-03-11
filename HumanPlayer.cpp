@@ -6,7 +6,7 @@ bool HumanPlayer::isDrawing () {
     string s;
     string a="y";
     cin>>s;
-    return a.compare(s) == 0;
+    return a == s;
 }
 
 void HumanPlayer::announce(ComputerPlayer h) {
