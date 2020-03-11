@@ -1,10 +1,8 @@
 #include "Deck.h"
 #include <random>
 #include <algorithm>
-using namespace std;
 
 void Deck::shuffle () {
-    auto rng = default_random_engine{};
     std::shuffle(cards->begin(), cards->end(), random_device());
 }
 
@@ -18,6 +16,7 @@ void Deck::Populate () {
 }
 
 Card Deck::deal () {
+    //Pop first card from vector
     Card c = cards->front();
     cards->erase(cards->begin());
     return c;

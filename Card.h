@@ -8,7 +8,6 @@ class Card {
 public:
     void displayCard();
     int getValue();
-    Card (int rank, char type);
     Card (int rank, int type);
 private:
     enum Rank {ACE=1,
@@ -24,7 +23,7 @@ private:
         JACK,
         QUEEN,
         KING};
-    enum Type {CLUBS='C', DIAMONDS='D', HEARTS='H', SPADES='S'};
+    enum Type {CLUBS=1, DIAMONDS, HEARTS, SPADES};
     Rank r;
     Type t;
 };

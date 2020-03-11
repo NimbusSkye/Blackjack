@@ -1,5 +1,6 @@
 #include "Card.h"
 
+//Translate enums to card info
 void Card::displayCard() {
     switch(r) {
         case JACK:
@@ -14,7 +15,19 @@ void Card::displayCard() {
         default:
             cout << r;
     }
-    cout << (char) t << " ";
+    switch (t) {
+        case 1:
+            cout << "C ";
+            break;
+        case 2:
+            cout << "D ";
+            break;
+        case 3:
+            cout << "H ";
+            break;
+        default:
+            cout << "S ";
+    }
 }
 
 int Card::getValue() {
@@ -23,24 +36,7 @@ int Card::getValue() {
     return r;
 }
 
-Card::Card (int rank, char type) {
-r=static_cast<Rank>(rank);
-t=static_cast<Type>(type);
-}
-
 Card::Card (int rank, int type) {
     r = static_cast<Rank>(rank);
-    switch (type) {
-        case 1:
-            t = Card::CLUBS;
-            break;
-        case 2:
-            t = Card::DIAMONDS;
-            break;
-        case 3:
-            t = Card::HEARTS;
-            break;
-        default:
-            t = Card::SPADES;
-    }
+    t = static_cast<Type>(type);
 }

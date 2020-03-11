@@ -10,6 +10,7 @@ int Hand::getTotal() {
     int total=0;
     int aces=0;
     for (Card c : *cards) {
+        //If card is Ace, check whether 1 or 10 is more beneficial
         if (c.getValue()==1 && total<=11) {
             aces++;
             total+=10;
@@ -17,8 +18,11 @@ int Hand::getTotal() {
         }
         total+=c.getValue();
     }
-    if (total>21)
-        total-=(aces*9);
+    //If player busts, optimize the Aces
+    while (total>21 && aces>0) {
+        total-=9;
+        aces--;
+    }
     return total;
 }
 
