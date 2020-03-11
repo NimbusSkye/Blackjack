@@ -1,5 +1,14 @@
 #include "BlackJackGame.h"
 
+void prettyPrint (ComputerPlayer *h1, HumanPlayer *h2) {
+    cout << "Casino: ";
+    h1->view();
+    cout << "[" << h1->getTotal() << "]" << endl;
+    cout << "Player: ";
+    h2->view();
+    cout << "[" << h2->getTotal() << "]" << endl;
+}
+
 void BlackJackGame::play() {
     m_player->clear();
     m_casino->clear();
@@ -10,28 +19,17 @@ void BlackJackGame::play() {
     m_player->add(m_deck->deal());
     m_casino->add(m_deck->deal());
     while (true) {
-        cout << "Casino: ";
-        m_casino->view();
-        cout << "[" << m_casino->getTotal() << "]" << endl;
-        cout << "Player: ";
-        m_player->view();
-        cout << "[" << m_player->getTotal() << "]" << endl;
+        prettyPrint(m_casino, m_player);
         if (!m_player->isDrawing())
             break;
         m_player->add(m_deck->deal());
         if (m_casino->isDrawing())
             m_casino->add(m_deck->deal());
-        cout << endl;
         if (m_player->getTotal()>=21 || m_casino->getTotal()>=21)
             break;
     }
     m_casino->add(m_deck->deal());
-    cout << "Casino: ";
-    m_casino->view();
-    cout << "[" << m_casino->getTotal() << "]" << endl;
-    cout << "Player: ";
-    m_player->view();
-    cout << "[" << m_player->getTotal() << "]" << endl;
+    prettyPrint(m_casino, m_player);
     m_player->announce(*m_casino);
     cout << endl;
 }
