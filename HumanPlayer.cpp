@@ -1,4 +1,5 @@
 #include "HumanPlayer.h"
+#include "ComputerPlayer.h"
 
 bool HumanPlayer::isDrawing () {
     cout << "Do you want to draw? (y/n):";
@@ -8,9 +9,9 @@ bool HumanPlayer::isDrawing () {
     return a.compare(s) == 0;
 }
 
-void HumanPlayer::announce(Hand h) {
+void HumanPlayer::announce(ComputerPlayer h) {
     //If player busts, casino wins, or casino has a larger total without busting
-    if (HumanPlayer::isBusted() || h.getTotal()==21 || (h.getTotal()>HumanPlayer::getTotal() && h.getTotal()<22))
+    if (HumanPlayer::isBusted() || h.getTotal()==21 || (h.getTotal()>HumanPlayer::getTotal() && !h.isBusted()))
         cout << "Player lost.";
     else if (h.getTotal()==HumanPlayer::getTotal())
         cout << "Push.";

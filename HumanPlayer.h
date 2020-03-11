@@ -6,6 +6,7 @@
 #define BLACKJACK_HUMANPLAYER_H
 
 #include "AbstractPlayer.h"
+#include "ComputerPlayer.h"
 #include <iostream>
 #include <string>
 using namespace std;
@@ -13,7 +14,7 @@ using namespace std;
 class HumanPlayer : public AbstractPlayer {
 public:
     bool isDrawing () override;
-    void announce (Hand h);
+    void announce (ComputerPlayer h);
 };
 
 
