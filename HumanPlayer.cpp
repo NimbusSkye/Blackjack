@@ -9,7 +9,8 @@ bool HumanPlayer::isDrawing () {
 }
 
 void HumanPlayer::announce(Hand h) {
-    if (HumanPlayer::isBusted() || h.getTotal()==21 || (h.getTotal()>HumanPlayer::getTotal() & h.getTotal()<22))
+    //If player busts, casino wins, or casino has a larger total without busting
+    if (HumanPlayer::isBusted() || h.getTotal()==21 || (h.getTotal()>HumanPlayer::getTotal() && h.getTotal()<22))
         cout << "Player lost.";
     else if (h.getTotal()==HumanPlayer::getTotal())
         cout << "Push.";
