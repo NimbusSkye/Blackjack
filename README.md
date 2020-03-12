@@ -1,6 +1,10 @@
+[Download here.](https://github.com/NimbusSkye/Blackjack/releases/download/1.0.0/blackjack.zip)
+
+Unzip the files and compile them with g++ or your preferred C++ compiler.
+
 Sample output:
 ```	
-Welcome to the Comp322 Blackjack game!
+Welcome to Yufeng Wang's Blackjack game!
 
 Casino: JD [10]
 Player: JH 2H [12]
