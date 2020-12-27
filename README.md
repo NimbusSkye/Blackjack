@@ -1,4 +1,4 @@
-[Download here.](https://github.com/NimbusSkye/Blackjack/releases/download/1.0.0/blackjack.zip)
+[Download here.](https://github.com/NimbusSkye/Blackjack/archive/1.1.zip)
 
 Unzip the files and compile them using the included Makefile.
 
