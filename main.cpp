@@ -1,5 +1,4 @@
-#include <iostream>
-#include "BlackJackGame.h"
+#include "blackjack.h"
 
 using namespace std;
 

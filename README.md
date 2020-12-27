@@ -1,6 +1,6 @@
 [Download here.](https://github.com/NimbusSkye/Blackjack/releases/download/1.0.0/blackjack.zip)
 
-Unzip the files and compile them with g++ or your preferred C++ compiler.
+Unzip the files and compile them using the included Makefile.
 
 Sample output:
 ```	
